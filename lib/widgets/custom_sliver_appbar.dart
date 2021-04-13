@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 SliverAppBar customSliverAppbar() {
   return SliverAppBar(
+    floating: true,
     backgroundColor: Colors.white,
     primary: false,
     leading: IconButton(
