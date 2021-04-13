@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shopping/configurations/screen_size_config.dart';
-import 'package:shopping/views/home/home_screen.dart';
 import 'package:shopping/views/signup/components/click_to_login.dart';
 import 'package:shopping/views/signup/components/instagram_facebook_login_icons.dart';
 import 'package:shopping/views/signup/components/main_sign_up_column.dart';
+import 'package:shopping/widgets/botton_nav_bar.dart';
 
 class SignUpScreen extends StatelessWidget {
   @override
@@ -52,7 +52,7 @@ class SignUpScreen extends StatelessWidget {
               ),
               TextButton(
                   onPressed: () {
-                    Get.to(HomeScreen());
+                    Get.to(BottomNavigationScreen());
                   },
                   child: Text(
                     'Continue As Guest >',

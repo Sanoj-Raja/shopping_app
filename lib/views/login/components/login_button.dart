@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shopping/configurations/screen_size_config.dart';
 import 'package:shopping/constants/constant_strings.dart';
-import 'package:shopping/views/home/home_screen.dart';
+import 'package:shopping/widgets/botton_nav_bar.dart';
 
 Container loginButton(BuildContext context) {
   return Container(
@@ -10,7 +10,7 @@ Container loginButton(BuildContext context) {
     height: displayHeightWithoutStatusBar(context) * 0.05,
     child: GestureDetector(
       onTap: () {
-        Get.to(HomeScreen());
+        Get.to(BottomNavigationScreen());
       },
       child: Container(
         decoration: BoxDecoration(
